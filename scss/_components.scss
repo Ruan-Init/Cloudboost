@@ -1,0 +1,86 @@
+.btn-primary{
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: $purple-10;
+    display: inline-block;
+    padding: 1.4rem 2.3rem;
+    color: $gray-100;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%; 
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: $purple-20;
+    }
+}
+
+.form-email{
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 4px 4px 4px 2.4rem;
+    @include flex-center;
+    width: 100%;
+    max-width: 52.1rem;
+    gap: 1.6rem;
+    input{
+        all: unset;
+        flex: 1;
+    }
+    color: $gray-100;
+    font-size: 1.6rem;
+    line-height: 150%; 
+    &::placeholder{
+        color: $gray-300;
+    }
+}
+
+.card-recurso{
+    width: 100%;
+    max-width: 26.5rem;
+    .icon{
+        width: 4.8rem;
+        height: 4.8rem;
+        @include flexTotalCenter;
+        border-radius: 4rem;
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        background: rgba(255, 255, 255, 0.03);
+        margin-bottom: 1.6rem;
+    }
+    .text{
+        h6{
+           color: $gray-100;
+           font-size: 1.8rem;
+           font-weight: 700;
+           line-height: 120%;
+           margin-bottom: 1.6rem;
+        }
+        p{
+            color: $gray-600;
+            font-size: 16px;
+            line-height: 150%; 
+        }       
+    }
+
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    & > div{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        span{
+         color: $gray-100;
+         font-size: 1.8rem;
+         font-weight: 600;
+         line-height: 150%; 
+         strong{
+            font-weight: 400;
+            color: $gray-600;
+         }
+        }
+    }
+}
